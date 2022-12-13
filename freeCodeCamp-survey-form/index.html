@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>freeCodeCamp Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <div id="title-group" class="title-group"> 
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      </div>
+      <form id="survey-form" action="http://example.com" method="post">
+        <div id="form-group-name-div" class="form-group">
+          <label id="name-label" for="name">Name: </label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div id="form-group-email-div" class="form-group">
+          <label id="email-label" for="email">email: </label>
+          <input id="email" name="email" type="email" placeholder="Enter your Email" required>
+        </div>
+        <div id="form-group-age-div" class="form-group">
+          <label id="number-label" for="number">Age: </label>
+          <input id="number" name="number" type="number" placeholder="Age" min="12" max="120">
+        </div>
+        <div id="form-group-role" class="form-group"> 
+          <label id="role-label" for="dropdown">
+            Which option best describes your current role?
+            <select id="dropdown" name="role">
+              <option value="" disabled selected>Select current role</option>
+              <option value="0">Student</option>
+              <option value="1">Full-Time Job</option>
+              <option value="2">Full-Time Learner</option>
+              <option value="3">Prefer Not To Say</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+        </div>
+        <div id="form-group-recommend-freeCodeCamp" class="form-group"> 
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <div>
+            <label for="recommend-freeCodeCamp-definitely">
+              <input id="recommend-freeCodeCamp-definitely" class="inline" name="recommend-freeCodeCamp" type="radio" value="definitely" checked>
+              Definitely
+            </label>
+          </div>
+          <div>
+            <label for="recommend-freeCodeCamp-maybe">
+              <input id="recommend-freeCodeCamp-maybe" class="inline" name="recommend-freeCodeCamp" type="radio" value="maybe">
+              Maybe
+            </label>
+          </div>
+          <div>
+            <label for="recommend-freeCodeCamp-not-sure">
+              <input id="recommend-freeCodeCamp-not-sure" class="inline" name="recommend-freeCodeCamp" type="radio" value="not-sure" checked>
+              Not sure
+            </label>
+          </div>
+        </div>
+        <div id="form-group-favourite-feature" class="form-group"> 
+          <label id="favourite-feature-label" for="favourite-feature">
+            What is your favorite feature of freeCodeCamp?
+            <select id="favourite-feature" name="favourite-feature">
+              <option value="" disabled selected>Select an option</option>
+              <option value="0">Challenges</option>
+              <option value="1">Projects</option>
+              <option value="2">Community</option>
+              <option value="3">Open Source</option>
+            </select>
+          </label>
+        </div>
+        <div id="form-group-suggested-improvement-options" class="form-group"> 
+          <p>What would you like to see improved? (check all that apply)</p>
+            <div>
+              <input id="suggested-improvement-front-end-projects" name="suggested-improvement-front-end-projects" type="checkbox" value="front-end-projects">
+              <label id="suggested-improvement-front-end-projects-label" for="suggested-improvement-front-end-projects">
+                Front-end Projects
+              </label>
+            </div>
+            <div>
+              <input id="suggested-improvement-back-end-projects" name="suggested-improvement-back-end-projects" type="checkbox" value="back-end-projects">
+              <label id="suggested-improvement-back-end-projects-label" for="suggested-improvement-back-end-projects">
+                Back-end Projects
+              </label>
+            </div>
+            <div>
+              <input id="suggested-improvement-data-visualization" name="suggested-improvement-data-visualization" type="checkbox" value="data-visualization">
+              <label id="suggested-improvement-data-visualization-label" for="suggested-improvement-data-visualization">
+                Data-Visualization
+              </label>
+            </div>
+            <div>
+              <input id="suggested-improvement-challenges" name="suggested-improvement-challenges" type="checkbox" value="challenges">
+              <label id="suggested-improvement-challenges" for="suggested-improvement-challenges">
+                Challenges
+              </label>
+            </div>
+            <div>
+              <input id="suggested-improvement-open-source-community" name="suggested-improvement-open-source-community" type="checkbox" value="open-source-community">
+              <label id="suggested-improvement-open-source-community" for="suggested-improvement-open-source-community">
+                Open-Source Community
+              </label>
+            </div>
+            <div>
+              <input id="suggested-improvement-gitter-help-rooms" name="suggested-improvement-gitter-help-rooms" type="checkbox" value="gitter-help-rooms">
+              <label id="suggested-improvement-gitter-help-rooms" for="suggested-improvement-gitter-help-rooms">
+                Gitter help rooms
+              </label>
+            </div>
+            <div>
+              <input id="suggested-improvement-videos" name="suggested-improvement-videos" type="checkbox" value="videos">
+              <label id="suggested-improvement-videos" for="suggested-improvement-videos">
+                Videos
+              </label>
+            </div>
+            <div>
+              <input id="suggested-improvement-city-meetups" name="suggested-improvement-city-meetups" type="checkbox" value="city-meetups">
+              <label id="suggested-improvement-city-meetups" for="suggested-improvement-city-meetups">
+                City Meetups
+              </label>
+            </div>
+            <div>
+              <input id="suggested-improvement-wiki" name="suggested-improvement-wiki" type="checkbox" value="wiki">
+              <label id="suggested-improvement-wiki" for="suggested-improvement-wiki">
+                Wiki
+              </label>
+            </div>
+            <div>
+              <input id="suggested-improvement-forum" name="suggested-improvement-forum" type="checkbox" value="forum">
+              <label id="suggested-improvement-forum" for="suggested-improvement-forum">
+                Forum
+              </label>
+            </div>
+            <div>
+              <input id="suggested-improvement-additional-courses" class="inline" name="suggested-improvement-additional-courses" type="checkbox" value="additional-courses">
+              <label id="suggested-improvement-additional-courses" for="suggested-improvement-additional-courses">
+                Additional Courses
+              </label>
+            </div>
+        </div>
+        <div id="form-group-extra-suggestions" class="form-group">
+          <label id="extra-suggestions-label" for="extra-suggestions">
+            Any comments or suggestions?
+            <textarea id="extra-suggestions" name="extra-suggestions" placeholder="Enter your comment here..."></textarea>
+          </label>
+        </div>
+        <div id="form-group-extra-suggestions" class="form-group">
+          <label id="submit-label">
+            <input id="submit" type="submit">
+          </label>
+        </div>
+      </form>
+    </main>
+  </body>
+  <footer>
+  </footer>
+</hmtl>

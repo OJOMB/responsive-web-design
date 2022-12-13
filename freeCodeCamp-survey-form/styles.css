@@ -1,0 +1,40 @@
+body {
+    color:#f1f2e4;
+    background-color: #2f66c4;
+}
+
+form {
+    border: 2px solid #000;
+}
+
+input {
+  margin: auto;
+  min-height: 2em;
+}
+
+select {
+  display: block;
+}
+
+input[type="checkbox"] {
+    vertical-align:middle;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+textarea {
+    display: block;
+}

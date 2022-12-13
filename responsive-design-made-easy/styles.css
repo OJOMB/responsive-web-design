@@ -1,0 +1,118 @@
+:root {
+    --clr-primary-200: #f3eed9;
+    --clr-primary-400: #824936;
+
+    --clr-neutral-100: #f5efef;
+    --clr-neutral-900: #222c2a;
+
+    --ff-primary: "Roboto", sans-serif;
+    --ff-accent: "Playfair Display", serif;
+}
+
+.container {
+    width: 90vw;
+    max-width: 1170px;
+    margin-inline: auto;
+}
+
+.container--narrow {
+    width: 90vw;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h2, h3, p {
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--clr-neutral-900);
+}
+
+header,
+section {
+    padding: 4rem 0;
+    @media (min-width: 40em) {
+        header,
+        section {
+            padding: 7rem 0;
+        }
+    }
+}
+
+section {
+    padding: 3rem 1rem;
+}
+
+.bg-light {
+    background-color: var(--clr-primary-200);
+}
+
+.bg-primary {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-400);
+}
+
+.bg-dark {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-900);
+}
+
+.bg-off-white {
+    background-color: var(--clr-neutral-100);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--clr-primary-400);
+    font-family: var(--ff-accent);
+    font-weight: 900;
+    line-height: 1;
+}
+
+.bg-primary h1, .bg-primary h2, .bg-primary h3, .bg-primary h4, .bg-primary h5, .bg-primary h6 {
+    color: var(--clr-primary-200);
+}
+
+.bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4, .bg-dark h5, .bg-dark h6 {
+    color: var(--clr-primary-200);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-primary h2,
+.bg-dark h2 {
+    color: var(--clr-primary-200);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Product Landing Page</title>
+        <meta name="description" content="toy product landing page for learning responsive design">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header id="header">
+            <nav id="nav-bar">
+                <img id="header-img" src="./img/logo.png" alt="oscar logo">
+                <a href="#section-features" class="nav-link">Features</a>
+                <a href="#section-video" class="nav-link">Video</a>
+                <a href="#section-reviews" class="nav-link">Reviews</a>
+            </nav>
+        </header>
+        <main>
+            <section id="hero" class="section">
+                <h1 id="product-name">Intel NUC, NUC 11 Pro Windows 10 Pro Desktop Mini PC</h1>
+                <img src="./img/product.png" alt="product image">
+                <p>It's more than a 4x4 mini PC. Intel® NUC is a wide portfolio of devices, kits, and elements that give you the ability to create the exact system you need.</p>
+                <p><a class="link-intel-nuc" href="https://www.intel.com/content/www/us/en/products/docs/boards-kits/nuc/what-is-nuc-article.html" target="_blank">Read the article, "What is a NUC?"</a></p>
+            </section>
+            <section id="section-features" class="section">
+                <h2>Features</h2>
+                <ul>
+                    <li>[11. Generation Intel i5-1135G7 with Win10 OS] Pre-installed Windows 10 Pro operating system. Intel Nuc 11 with the latest Core i5-1135G7 processor, the maximum turbo frequency is up to 4.2GHz. 4 cores, 8 threads and 8M smart cache.</li>
+                    <li>[Intel Iris Xe Graphics] The small mini PC is equipped with Intel Iris Xe graphics and offers stunning 4K UHD resolution and supports up to 8K UHD resolution, which enables impressive visuals. Enjoy UHD web surfing, video playback, TV, home theater and gaming with your family.</li>
+                    <li>[Larger capacity and support for memory expansion] Comes with 1 x 16GB SODIMM, an empty dual-channel DDR4 slot supports expansion up to 64GB (32+32). 1 x 256GB SSD (2280 M.2 SATA/PCIe) included, expandable up to 2TB. An additional 2.5'' SATA HDD (7mm) slot is available for up to 2 additional TB.</li>
+                </ul>
+            </section>
+            <section id="section-video" class="section">
+                <h2>Video</h2>
+                <iframe id="video" src="https://www.youtube.com/embed/aERXgOxjAAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section id="section-form" class="section">
+                <h2>Form</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                    <input id="email" type="email" name="email" id="email" placeholder="enter email address">
+                    <input id="submit" type="submit" value="Send" required>
+                </form>
+            </section>
+            <section id="section-reviews" class="section">
+                <h2>Reviews</h2>
+                <div class="flex-reviews">
+                    <div class="review">
+                        <p class="user-review">"I love this product. It's so small and compact, yet it has all the power I need. I can't believe I've been living without it."</p>
+                        <p class="user-name">- John Doe</p>
+                    </div>
+                    <div class="review">
+                        <p class="user-review">"I love this product. It's so small and compact, yet it has all the power I need. I can't believe I've been living without it."</p>
+                        <p class="user-name">- John Doe</p>
+                    </div>
+                    <div class="review">
+                        <p class="user-review">"my wife left me but I still have my NUC"</p>
+                        <p class="user-name">- John Doe</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

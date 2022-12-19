@@ -1,3 +1,11 @@
+body {
+  animation-name: body;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 100vh;
+}
+
 .wheel {
   border: 2px solid black;
   border-radius: 50%;
@@ -108,5 +116,23 @@
 
   100% {
     transform: rotate(-360deg);
+  }
+}
+
+@keyframes body {
+  0% {
+    background: linear-gradient(white,  #76e3f1);
+  }
+
+  25% {
+    background: linear-gradient(#76e3f1, rgb(241, 241, 143));
+  }
+
+  50% {
+    background: linear-gradient(rgb(241, 241, 143), rgb(214, 152, 214));
+  }
+
+  100% {
+    background: linear-gradient(white,  #76e3f1);
   }
 }
